@@ -4,7 +4,8 @@ This project initially was outsourced to a group of android developers in Poketo
 
 ### Getting Set Up
 1. Clone this repo: `git clone git@github.com:doximity/GistList.git`
-<more setup instructions here>
+
+**more setup instructions here**
 
 ### Submission Instructions
 
@@ -58,7 +59,7 @@ We are always excited about new feqatures and tools that android framework provi
 
 Use the databinding feature to populate all the data we need for each gist row.
 
-*HINT*: for loading images use the [CustomSetters}(https://developer.android.com/topic/libraries/data-binding/index.html#custom_setters) pattern
+*HINT*: for loading images use the [CustomSetters](https://developer.android.com/topic/libraries/data-binding/index.html#custom_setters) pattern
 
 ### Task 5 (Optional Bounes)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
@@ -68,6 +69,6 @@ We have recieve a feature request that we would like you to implement. Our users
 
 Implement functionality for `hide_images` item in the `main_menu.xml` menu so that when tapped it make all the images in our list `gone` with an animated change to the layout. 
 
-<demo gif here>
+**demo gif here**
 
 
