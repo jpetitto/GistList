@@ -29,7 +29,7 @@ This project initially was outsourced to a group of android developers in Poketo
 * Do not jump any Task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
 
 # Tasks
-### Task 1
+### Task 1 (estimated time 5 min)
 
 Looking at `ListViewAdapter` class, there is a wellknown pattern that has not been used.
 Change the adapter to use the pattern.
