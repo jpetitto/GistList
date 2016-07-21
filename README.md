@@ -3,8 +3,8 @@ GistList is a usefull app for Gist entusiasims, it fetches top 100 public gists 
 This project initially was outsourced to a group of android developers in Poketown and its been couple of years that no one has touched it. We need your help to bring this app uptodate and use the latest Android technologies to improve it.
 
 ### Getting Set Up
-1. Clone this repo: `git clone git@github.com:doximity/tweetmd.git`
-
+1. Clone this repo: `git clone git@github.com:doximity/GistList.git`
+<more setup instructions here>
 
 ### Submission Instructions
 
