@@ -61,9 +61,9 @@ Use the databinding feature to populate all the data we need for each gist row.
 
 *HINT*: for loading images use the [CustomSetters](https://developer.android.com/topic/libraries/data-binding/index.html#custom_setters) pattern
 
-### Task 5 (Optional Bounes)
+### Task 5 (Optional Bonus)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
-*warning*: This task is optional but implementing a solution for this task is a bounes.
+*warning*: This task is optional but implementing a solution for this task is a bonus.
 
 We have recieve a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain, useless, and uncolorfull gists in our list.
 
