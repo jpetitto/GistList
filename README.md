@@ -4,6 +4,8 @@ This project initially was outsourced to a group of android developers in Poketo
 
 ### Getting Set Up
 1. Clone this repo: `git clone git@github.com:doximity/GistList.git`
+2. Use Android Studio 2.1.2 Stable version
+3. Use "Open an existing Android Studio project" to open GistList project
 
 **more setup instructions here**
 
