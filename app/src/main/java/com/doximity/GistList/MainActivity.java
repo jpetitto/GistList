@@ -35,15 +35,24 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override public void onFailure(Call<ArrayList<Gist>> call, Throwable t) {
+    }
 
             }
         });
+    @Override public boolean onCreateOptionsMenu(Menu menu) {
+        //  Used for Task 5
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override public boolean onOptionsItemSelected(MenuItem item) {
+        //  Used for Task 5
+        return super.onOptionsItemSelected(item);
     }
 
     interface GithubApi {
 
         @GET("/gists/public?per_page=100") Call<ArrayList<Gist>> getGists();
+        // Used for Task 3
         @GET("/gists/public?per_page=100") Observable<ArrayList<Gist>> getGistsObservable();
     }
 }

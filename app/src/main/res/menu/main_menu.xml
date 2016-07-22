@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="hide images"
-        android:id="@+id/hide_images"
+        android:title="@string/hide_images"
+        android:id="@+id/change_image_visibility"
         app:showAsAction="always" />
 </menu>
