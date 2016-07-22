@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        // TODO: 7/22/16 Task 3
     }
 
 
