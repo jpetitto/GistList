@@ -49,7 +49,7 @@ We have heared of new View that is included in [support library](https://develop
 ### Task 3 (Estimated time 15 min)
 *warning*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
-Some of the gists that we are getting have annonimus owners, which inturn means we don't have a owner image to load for the gist. 
+Some of the gists that we are getting have anonymous owners, which inturn means we don't have a owner image to load for the gist. 
 
 1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it suppose to with the new method of fetching the data.  
 2. Then use an apptopiate `RxJava` operator to only display the gists with owner and not the ones with `null` value;
@@ -67,13 +67,17 @@ Use the databinding feature to populate all the data we need for each gist row.
 *NOTE*: There should not be any setText() method call or use of Picassa in your adapter after this task is finished.
 *HINT*: For loading images use the CustomSetters pattern
 
-### Task 5 (Optional Bonus)
+### Task 5 (Estimated time 30 min)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
-*warning*: This task is optional but implementing a solution for this task is a bonus.
 
 We have recieve a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain, useless, and uncolorfull gists in our list.
 
-Implement functionality for `hide_images` item in the `main_menu.xml` menu so that when tapped it make all the images in our list `gone` with an animated change to the layout. 
+1. Implement functionality for `change_image_visibility` item in the `main_menu.xml` menu so that when tapped its title switches between `R.string.show_images` and `R.string.hide_images`
+2. Use RxJava and Observable pattern to trigger the visibility of ImageView in each item.
+3. Make sure all the image's animation triggred at the same time and not with any delay between items.
+4. Make sure your choice of show or hide images continues whn user scrolls the list further down.
+
+
 
 **demo gif here**
 
