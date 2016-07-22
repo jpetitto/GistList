@@ -43,10 +43,10 @@ public class ListViewAdapter extends BaseAdapter {
     @Override public View getView(int position, View convertView, ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
         ImageView imageView = (ImageView) view.findViewById(R.id.item_image);
-        TextView textViewLine1 = (TextView) view.findViewById(R.id.item_text_line_1);
-        TextView textViewLine2 = (TextView) view.findViewById(R.id.item_text_line_2);
-        TextView textViewLine3 = (TextView) view.findViewById(R.id.item_text_line_3);
-        TextView textViewCommentCount = (TextView) view.findViewById(R.id.item_comment_count);
+        TextView tvFileName = (TextView) view.findViewById(R.id.item_file_name);
+        TextView tvFileType = (TextView) view.findViewById(R.id.item_file_type);
+        TextView tvFileLanguage = (TextView) view.findViewById(R.id.item_language);
+        TextView tvFileSize = (TextView) view.findViewById(R.id.item_file_size);
 
         Gist item = (Gist) getItem(position);
         Owner owner = item.owner;
@@ -60,10 +60,10 @@ public class ListViewAdapter extends BaseAdapter {
         Iterator<AttachedFile> iterator = item.files.values().iterator();
         if (iterator.hasNext()) {
             AttachedFile file = iterator.next();
-            textViewLine1.setText(file.filename);
-            textViewLine2.setText(file.type);
-            textViewLine3.setText(file.language);
-            textViewCommentCount.setText(String.valueOf(file.size));
+            tvFileName.setText(file.filename);
+            tvFileType.setText(file.type);
+            tvFileLanguage.setText(file.language);
+            tvFileSize.setText(String.valueOf(file.size));
         }
 
         return view;
