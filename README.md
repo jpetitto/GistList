@@ -61,7 +61,7 @@ Some of the gists that we are getting have annonimus owners, which inturn means 
 ### Task 4
 *warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
 
-We are always excited about new feqatures and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
+We are always excited about new features and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
 
 Use the databinding feature to populate all the data we need for each gist row.
 
