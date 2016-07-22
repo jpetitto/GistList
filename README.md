@@ -7,8 +7,6 @@ This project initially was outsourced to a group of android developers in Poketo
 2. Use Android Studio 2.1.2 Stable version
 3. Use "Open an existing Android Studio project" to open GistList project
 
-**more setup instructions here**
-
 ### Submission Instructions
 
 * Create a local branch named with the following format: `firstName_lastName`
@@ -37,7 +35,7 @@ Looking at `ListViewAdapter` class, there is a wellknown pattern that has not be
 Change the adapter to use the pattern.
 
 ### Task 2 (Estimated time 10 min)
-*warning*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
+*WARNING*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
 We have heared of new View that is included in [support library](https://developer.android.com/topic/libraries/support-library/features.html) which is suppose to be much cleaner than ListView.
 1. Change the `activity_main` layout to replace the `ListView`
@@ -47,7 +45,7 @@ We have heared of new View that is included in [support library](https://develop
 *NOTE*: You should not need to include and new dependencies.
 
 ### Task 3 (Estimated time 15 min)
-*warning*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
+*WARNING*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
 Some of the gists that we are getting have anonymous owners, which inturn means we don't have a owner image to load for the gist. 
 
@@ -58,7 +56,7 @@ Some of the gists that we are getting have anonymous owners, which inturn means 
 *NOTE*: You should only use RxJava (RxAndroid) operators. All the operators can be chained and you should be able to just call the `recyclerView.setAdapter(new NewAdapter(...));` on the last operator.
 
 ### Task 4 (Estimated time 20 min)
-*warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
+*WARNING*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
 
 We are always excited about new features and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
 
@@ -68,7 +66,7 @@ Use the databinding feature to populate all the data we need for each gist row.
 *HINT*: For loading images use the CustomSetters pattern
 
 ### Task 5 (Estimated time 30 min)
-*warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
+*WARNING*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
 
 We have recieve a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain, useless, and uncolorfull gists in our list.
 
@@ -78,7 +76,5 @@ We have recieve a feature request that we would like you to implement. Our users
 4. Make sure your choice of show or hide images continues whn user scrolls the list further down.
 
 
-
-**demo gif here**
 
 
