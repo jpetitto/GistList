@@ -62,7 +62,7 @@ We are always excited about new features and tools that android framework provid
 
 Use the databinding feature to populate all the data we need for each gist row.
 
-*HINT*: for loading images use the [CustomSetters](https://developer.android.com/topic/libraries/data-binding/index.html#custom_setters) pattern
+*HINT*: for loading images use the CustomSetters pattern
 
 ### Task 5 (Optional Bonus)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
