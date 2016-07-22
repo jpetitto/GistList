@@ -55,7 +55,7 @@ Some of the gists that we are getting have annonimus owners, which inturn means 
 
 *NOTE*: You should only use RxJava (RxAndroid) operators. All the operators can be chained and you should be able to just call the `recyclerView.setAdapter(new NewAdapter(...));` on the last operator.
 
-### Task 4
+### Task 4 (Estimated time 20 min)
 *warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
 
 We are always excited about new features and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
