@@ -4,6 +4,8 @@ import com.doximity.GistList.models.Gist;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -35,10 +37,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override public void onFailure(Call<ArrayList<Gist>> call, Throwable t) {
+            }
+
+        });
     }
 
-            }
-        });
+
     @Override public boolean onCreateOptionsMenu(Menu menu) {
         //  Used for Task 5
         return super.onCreateOptionsMenu(menu);
