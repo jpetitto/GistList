@@ -29,41 +29,47 @@ This project initially was outsourced to a group of android developers in Poketo
 * Do not jump any Task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
 
 # Tasks
-### Task 1
+### Task 1 (Estimated time 5 min)
 
 Looking at `ListViewAdapter` class, there is a wellknown pattern that has not been used.
 Change the adapter to use the pattern.
 
 *HINT*: Lint detects the missing pattern and warns us to use it.
 
-### Task 2
+### Task 2 (Estimated time 10 min)
 *warning*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
 We have heared of new View that is included in [support library](https://developer.android.com/topic/libraries/support-library/features.html) which is suppose to be much cleaner than ListView.
-Change the `activity_main` layout to replace the `ListView`, `MainActivity` to initialize the view and do the required configurations, and then create a new adapter class to be used with the our new view.
+1. Change the `activity_main` layout to replace the `ListView`
+2. Change `MainActivity` to initialize the view and do the required configurations
+3. Implement the new adapter in `NewAdapter.java` and use it as your adapter for the list.
 
 *HINT*: The support library you need to be using is already added to the project in the `build.gradle` file.
 
-### Task 3
+### Task 3 (Estimated time 15 min)
 *warning*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
 Some of the gists that we are getting have annonimus owners, which inturn means we don't have a owner image to load for the gist. 
 
 1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it suppose to with the new method of fetching the data.  
 2. Then use an apptopiate `RxJava` operator to only display the gists with owner and not the ones with `null` value;
+3. You will encounter an `IllegalArgumentException` when using the `getGistsObservable()`. Find the reason and fix it.
+
+*HINT*: the exact exception message is: 
+`java.lang.IllegalArgumentException: Unable to create call adapter for rx.Observable<java.util.ArrayList<com.doximity.GistList.models.Gist>>`
 
 ### Task 4
 *warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
 
-We are always excited about new feqatures and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
+We are always excited about new features and tools that android framework provide us. So we decide to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
 
 Use the databinding feature to populate all the data we need for each gist row.
 
 *HINT*: for loading images use the [CustomSetters](https://developer.android.com/topic/libraries/data-binding/index.html#custom_setters) pattern
 
-### Task 5 (Optional Bounes)
+### Task 5 (Optional Bonus)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
-*warning*: This task is optional but implementing a solution for this task is a bounes.
+*warning*: This task is optional but implementing a solution for this task is a bonus.
 
 We have recieve a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain, useless, and uncolorfull gists in our list.
 
