@@ -64,7 +64,8 @@ We are always excited about new features and tools that android framework provid
 
 Use the databinding feature to populate all the data we need for each gist row.
 
-*HINT*: for loading images use the CustomSetters pattern
+*NOTE*: There should not be any setText() method call or use of Picassa in your adapter after this task is finished.
+*HINT*: For loading images use the CustomSetters pattern
 
 ### Task 5 (Optional Bonus)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
