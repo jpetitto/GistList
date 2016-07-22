@@ -4,6 +4,8 @@ This project initially was outsourced to a group of android developers in Poketo
 
 ### Getting Set Up
 1. Clone this repo: `git clone git@github.com:doximity/GistList.git`
+2. Use Android Studio 2.1.2 Stable version
+3. Use "Open an existing Android Studio project" to open GistList project
 
 **more setup instructions here**
 
@@ -62,7 +64,8 @@ We are always excited about new features and tools that android framework provid
 
 Use the databinding feature to populate all the data we need for each gist row.
 
-*HINT*: for loading images use the CustomSetters pattern
+*NOTE*: There should not be any setText() method call or use of Picassa in your adapter after this task is finished.
+*HINT*: For loading images use the CustomSetters pattern
 
 ### Task 5 (Optional Bonus)
 *warning*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
