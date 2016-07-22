@@ -29,18 +29,20 @@ This project initially was outsourced to a group of android developers in Poketo
 * Do not jump any Task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
 
 # Tasks
-### Task 1 (estimated time 5 min)
+### Task 1 (Estimated time 5 min)
 
 Looking at `ListViewAdapter` class, there is a wellknown pattern that has not been used.
 Change the adapter to use the pattern.
 
 *HINT*: Lint detects the missing pattern and warns us to use it.
 
-### Task 2
+### Task 2 (Estimated time 10 min)
 *warning*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
 We have heared of new View that is included in [support library](https://developer.android.com/topic/libraries/support-library/features.html) which is suppose to be much cleaner than ListView.
-Change the `activity_main` layout to replace the `ListView`, `MainActivity` to initialize the view and do the required configurations, and then create a new adapter class to be used with the our new view.
+1. Change the `activity_main` layout to replace the `ListView`
+2. Change `MainActivity` to initialize the view and do the required configurations
+3. Implement the new adapter in `NewAdapter.java` and use it as your adapter for the list.
 
 *HINT*: The support library you need to be using is already added to the project in the `build.gradle` file.
 
