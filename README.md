@@ -34,8 +34,6 @@ This project initially was outsourced to a group of android developers in Poketo
 Looking at `ListViewAdapter` class, there is a wellknown pattern that has not been used.
 Change the adapter to use the pattern.
 
-*HINT*: Lint detects the missing pattern and warns us to use it.
-
 ### Task 2 (Estimated time 10 min)
 *warning*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
@@ -44,7 +42,7 @@ We have heared of new View that is included in [support library](https://develop
 2. Change `MainActivity` to initialize the view and do the required configurations
 3. Implement the new adapter in `NewAdapter.java` and use it as your adapter for the list.
 
-*HINT*: The support library you need to be using is already added to the project in the `build.gradle` file.
+*NOTE*: You should not need to include and new dependencies.
 
 ### Task 3 (Estimated time 15 min)
 *warning*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
@@ -55,8 +53,7 @@ Some of the gists that we are getting have annonimus owners, which inturn means 
 2. Then use an apptopiate `RxJava` operator to only display the gists with owner and not the ones with `null` value;
 3. You will encounter an `IllegalArgumentException` when using the `getGistsObservable()`. Find the reason and fix it.
 
-*HINT*: the exact exception message is: 
-`java.lang.IllegalArgumentException: Unable to create call adapter for rx.Observable<java.util.ArrayList<com.doximity.GistList.models.Gist>>`
+*NOTE*: You should only use RxJava (RxAndroid) operators. All the operators can be chained and you should be able to just call the `recyclerView.setAdapter(new NewAdapter(...));` on the last operator.
 
 ### Task 4
 *warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
