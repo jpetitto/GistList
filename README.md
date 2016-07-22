@@ -46,13 +46,17 @@ We have heared of new View that is included in [support library](https://develop
 
 *HINT*: The support library you need to be using is already added to the project in the `build.gradle` file.
 
-### Task 3
+### Task 3 (Estimated time 15 min)
 *warning*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
 Some of the gists that we are getting have annonimus owners, which inturn means we don't have a owner image to load for the gist. 
 
 1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it suppose to with the new method of fetching the data.  
 2. Then use an apptopiate `RxJava` operator to only display the gists with owner and not the ones with `null` value;
+3. You will encounter an `IllegalArgumentException` when using the `getGistsObservable()`. Find the reason and fix it.
+
+*HINT*: the exact exception message is: 
+`java.lang.IllegalArgumentException: Unable to create call adapter for rx.Observable<java.util.ArrayList<com.doximity.GistList.models.Gist>>`
 
 ### Task 4
 *warning*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
