@@ -40,17 +40,17 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-        // TODO: 7/22/16 Task 3
+        // TODO: Task 3
     }
 
 
     @Override public boolean onCreateOptionsMenu(Menu menu) {
-        //  Used for Task 5
+        // TODO: Task 5
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
-        //  Used for Task 5
+        // TODO: Task 5
         return super.onOptionsItemSelected(item);
     }
 
