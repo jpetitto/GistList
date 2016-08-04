@@ -77,6 +77,10 @@ We have received a feature request that we would like you to implement. Our user
 
 *NOTE*: You do not have to use RxJava for this task but your solution needs to work as expected.
 
+Here is a preview of how the final result should look like:
+
+![Demo](http://i.giphy.com/3o7TKW0nrNSwdar7Ms.gif)
+
 ### Task 6
 
 Make sure that your implementation is error free and then make your pull-request as described in the submission section.
