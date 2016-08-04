@@ -37,6 +37,7 @@ Looking at `ListViewAdapter` class, we noticed that having to call `findViewById
 *WARNING*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
 We have heard of new View that is included in [support library](https://developer.android.com/topic/libraries/support-library/features.html) which is suppose to be much cleaner than ListView.
+
 1. Change the `activity_main` layout to replace the `ListView`
 2. Change `MainActivity` to initialize the view and do the required configurations
 3. Implement the new adapter in `NewAdapter.java` and use it as your adapter for the list.
