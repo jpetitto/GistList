@@ -2,7 +2,7 @@
 GistList is a useful app for Gist enthusiasts, it fetches and displays the top 100 public gists from Github. This project was initially outsourced to a group of Android developers in Poketown, but it's been a couple of years since anyone has touched it. We need your help to update the app and improve it with the latest Android technologies!
 
 ### Getting Set Up
-1. Clone this repo: `git clone git@github.com:doximity/GistList.git`
+1. Clone this repo: `git clone https://github.com/doximity/GistList.git`
 2. Use Android Studio 2.1.2 Stable version
 3. Use "Open an existing Android Studio project" to open GistList project
 
