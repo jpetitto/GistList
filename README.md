@@ -68,7 +68,7 @@ We have received a feature request that we would like you to implement. Our user
 
 *NOTE*: You do not have to use RxJava for this task but your solution needs to work as expected.
 
-***BONUS*** Try to implment this feature without touching ANY data model and without ```Notifing``` your adapter.
+***BONUS*** Try to implment this feature without ```Notifing``` your adapter.
 
 Here is a preview of how the final result should look like:
 
