@@ -75,7 +75,7 @@ Here is a preview of how the final result should look like:
 ![Demo](http://i.giphy.com/3o7TKW0nrNSwdar7Ms.gif)
 
 
-### Task 6
+### Task 5
 
 Make sure that your implementation is error free (your app doesn't crash with any input) and then make your pull-request as described in the submission section.
 
