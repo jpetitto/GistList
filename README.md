@@ -20,7 +20,7 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * Knowledge of framework
 * Ability to interpret and leverage existing code, documentation
 * Correctness of implementation according to spec
-* Your implementation should not crash the app with any type of input
+* Your implementation should not crash the app with any type of input, you should not relying on validity of any data from api
 
 ### Limitations
 * We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks
@@ -32,19 +32,9 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 
 Looking at `ListViewAdapter` class, we noticed that having to call `findViewById()` on every call of `getView()` is a very expensive operation. Solve this problem and *preferably* use an Android Structural Pattern.
 
-### Task 2 (Estimated time 10 min)
+
+### Task 2 (Estimated time 15 min)
 *WARNING*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
-
-We have heard of a new view that is included in [support library](https://developer.android.com/topic/libraries/support-library/features.html). This view is supposed to be much cleaner than ListView.
-
-1. Change the `activity_main` layout to replace the `ListView`
-2. Change `MainActivity` to initialize the view and do the required configurations
-3. Implement the new adapter in `NewAdapter.java` and use it as your adapter for the list
-
-*NOTE*: You should not need to include any new dependencies.
-
-### Task 3 (Estimated time 15 min)
-*WARNING*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
 Some of the gists that we are getting have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
 
@@ -54,18 +44,20 @@ Some of the gists that we are getting have anonymous owners, which in turn means
 
 ***You have a better solution than using RxJava operators?*** Go ahead and implement you own solution so long as it does the job.
 
-### Task 4 (Estimated time 20 min)
-*WARNING*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
+### Task 3 (Estimated time 20 min)
+*WARNING*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
 
 We are always excited about new features and tools that Android frameworks provide us with. So we decided to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
 
 Use the databinding feature to populate all the data we need for each gist row.
 
 *NOTE*: There should not be any setText() method call or use of Picassa in your adapter after this task is finished.
-*HINT*: For loading images use the CustomSetters pattern
 
-### Task 5 (Estimated time 30 min)
-*WARNING*: don't forget to commit your finished work for task 4 with commit title "Task 4" before starting this task.
+*HINT*: For loading images use the CustomSetters pattern.
+
+
+### Task 4 (Estimated time 30 min)
+*WARNING*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
 
 We have received a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain gists in our list.
 
@@ -76,13 +68,16 @@ We have received a feature request that we would like you to implement. Our user
 
 *NOTE*: You do not have to use RxJava for this task but your solution needs to work as expected.
 
+***BONUS*** Try to implment this feature without ```Notifing``` your adapter.
+
 Here is a preview of how the final result should look like:
 
 ![Demo](http://i.giphy.com/3o7TKW0nrNSwdar7Ms.gif)
 
-### Task 6
 
-Make sure that your implementation is error free and then make your pull-request as described in the submission section.
+### Task 5
+
+Make sure that your implementation is error free (your app doesn't crash with any input) and then make your pull-request as described in the submission section.
 
 Thank you for your time and we will get back to you as soon as possible.
 
