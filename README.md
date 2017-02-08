@@ -1,29 +1,28 @@
 # Coding Assignment
 
-We would like to thank you for taking the time to complete this assignment. We believe this to be an effective way at allowing you to show us your skills, on your own time, without the pressure of someone looking over your shoulder. Your code will be used to help us decide if we'd like to proceed with the interview process. Please understand that completing this assignment doesn't guarantee a job or follow up interviews. We will keep you posted either way.
+We would like to thank you for taking the time to complete this assignment. We believe this to be an effective way at allowing you to show us your skills, on your own time, without the pressure of someone looking over your shoulder. Your code will be used to help us decide if we'd like to proceed with the interview process. Please understand that completing this assignment doesn't guarantee a job or follow up interviews. We will carefully evalutate your work and let you know within a few days if we'd like to proceed with the process. 
 
 # GistList
 GistList is a useful app for Gist enthusiasts, it fetches and displays the top 100 public gists from Github. This project was initially outsourced to a group of Android developers in Poketown, but it's been a couple of years since anyone has touched it. We need your help to update the app and improve it with the latest Android technologies!
 
 ### Submission Instructions
-* **FORK** this repository
-* Create a local branch named with the following format: `firstName_lastName`
-* For each task, make one commit with title of `task #(task_number)` ex: task #3
-* Once all work is completed, create a new pull-request pointing at ****YOUR**** fork with your changes
+* **FORK** this repository.
+* Create a local branch named with the following format: `firstName_lastName`.
+* For each task, make one commit with title of `task #(task_number)` ex: task #3.
+* Once all work is completed, create a new pull-request pointing at ****YOUR**** fork with your changes.
 * Add @kayvannj as a contributor on your fork and tag this account on your PR description.
-* If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR
+* If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR description.
 
 ### We are looking for:
-* Clean, optimized, well-organized code
-* Knowledge of framework
-* Ability to interpret and leverage existing code, documentation
-* Correctness of implementation according to spec
-* Your implementation should not crash the app with any type of input, you should not relying on validity of any data from api
+* Clean, optimized, well-organized code.
+* Ability to interpret and leverage existing code and documentation.
+* Correctness of implementation according to requirements.  
+* Don't trust data or APIs, your implementation should handle any necessary data validation to prevent crashes.
 
 ### Limitations
-* We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks
-* Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included
-* Do not skip any Task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next
+* We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks.
+* Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included.
+* Do not skip any task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
 
 # Tasks
 ### Task 1
@@ -33,7 +32,7 @@ Looking at `ListViewAdapter` class, we noticed that having to call `findViewById
 ### Task 2
 *WARNING*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
 
-Some of the gists that we are getting have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
+Some of the gists that we are fetching have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
 
 1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it supposed to with the new method of fetching the data.
 2. Filter out the gists with no owners/images
