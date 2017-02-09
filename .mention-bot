@@ -1,0 +1,12 @@
+{
+  "maxReviewers": 1,
+  "numFilesToCheck": 10, 
+  "message": "@reviewers, please review this.",
+  "alwaysNotifyForPaths": [
+    {
+      "name": "kayvannj",
+      "files": ["**"],
+    }
+  ],
+  "actions": ["opened"],
+}

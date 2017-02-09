@@ -1,16 +1,13 @@
 # Coding Assignment
-
 We would like to thank you for taking the time to complete this assignment. We believe this to be an effective way at allowing you to show us your skills, on your own time, without the pressure of someone looking over your shoulder. Your code will be used to help us decide if we'd like to proceed with the interview process. Please understand that completing this assignment doesn't guarantee a job or follow up interviews. We will carefully evalutate your work and let you know within a few days if we'd like to proceed with the process. 
 
 # GistList
 GistList is a useful app for Gist enthusiasts, it fetches and displays the top 100 public gists from Github. This project was initially outsourced to a group of Android developers in Poketown, but it's been a couple of years since anyone has touched it. We need your help to update the app and improve it with the latest Android technologies!
 
 ### Submission Instructions
-* **FORK** this repository.
 * Create a local branch named with the following format: `firstName_lastName`.
-* For each task, make one commit with title of `task #(task_number)` ex: task #3.
-* Once all work is completed, create a new pull-request pointing at ****YOUR**** fork with your changes.
-* Add @kayvannj as a contributor on your fork and tag this account on your PR description.
+* When finished each task, make a final commit for that task with commit message of `task #(task_number)` ex: task #3.
+* Once all work is completed, create a new pull-request from your branch to master.
 * If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR description.
 
 ### We are looking for:
@@ -27,27 +24,19 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 # Tasks
 ### Task 1
 
-Looking at `ListViewAdapter` class, we noticed that having to call `findViewById()` on every call of `getView()` is a very expensive operation. Optimize.
-
-### Task 2
-*WARNING*: don't forget to commit your finished work for task 1 with commit title "Task 1" before starting this task.
-
 Some of the gists that we are fetching have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
 
 1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it supposed to with the new method of fetching the data.
 2. Filter out the gists with no owners/images
+3. Optimize the adapter in charge of populating the list
 
-### Task 3
-*WARNING*: don't forget to commit your finished work for task 2 with commit title "Task 2" before starting this task.
+### Task 2
 
 We are always excited about new features and tools that Android frameworks provide us with. So we decided to further simplify our list of gists by using [DataBinding](https://developer.android.com/topic/libraries/data-binding/index.html).
 
-Use the databinding feature to populate all the data we need for each gist row.
-
 We expect you to utilize all the benefits that we can get from this library in this context.
 
-### Task 4
-*WARNING*: don't forget to commit your finished work for task 3 with commit title "Task 3" before starting this task.
+### Task 3
 
 We have received a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain gists in our list.
 
@@ -60,12 +49,5 @@ We have received a feature request that we would like you to implement. Our user
 Here is a preview of how the final result should look like:
 
 ![Demo](http://i.giphy.com/3o7TKW0nrNSwdar7Ms.gif)
-
-
-### Task 5
-
-Make sure that your implementation is error free (your app doesn't crash with any input from api) and then make your pull-request as described in the submission section.
-
-Thank you for your time and we will get back to you as soon as possible.
 
 Best of luck.
