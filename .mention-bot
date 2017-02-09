@@ -1,12 +1,16 @@
 {
   "maxReviewers": 1,
-  "numFilesToCheck": 10, 
+  "numFilesToCheck": 10,
   "message": "@reviewers, please review this.",
   "alwaysNotifyForPaths": [
     {
       "name": "kayvannj",
-      "files": ["**"],
+      "files": [
+        "**"
+      ]
     }
   ],
-  "actions": ["opened"]
+  "actions": [
+    "opened"
+  ]
 }
