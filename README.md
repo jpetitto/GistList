@@ -18,10 +18,9 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * Knowledge of framework
 * Ability to interpret and leverage existing code, documentation
 * Correctness of implementation according to spec
-* Your implementation should not crash the app with any type of input, you should not relying on validity of any data from api
+* Your implementation should not crash the app with any type of input, you should not rely on the API returning valid data
 
 ### Limitations
-* We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks
 * Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included
 * Do not skip any Task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next
 
@@ -35,7 +34,7 @@ Looking at `ListViewAdapter` class, we noticed that having to call `findViewById
 
 Some of the gists that we are getting have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
 
-1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it supposed to with the new method of fetching the data.
+1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it is supposed to with the new method of fetching the data.
 2. Filter out the gists with no owners/images
 
 ### Task 3
@@ -54,9 +53,9 @@ We have received a feature request that we would like you to implement. Our user
 
 1. Implement functionality for `change_image_visibility` item in the `main_menu.xml` menu so that when tapped, its title switches between `R.string.show_images` and `R.string.hide_images`
 2. Trigger the visibility of ImageView in each item in a way that all the image animations are triggered at the same time and not with any delay between items.
-3. Make sure your choice of show or hide images continues when user scrolls the list further down.
+3. Make sure your choice to show or hide images continues when user scrolls the list further down.
 
-***BONUS*** Try to implment this feature without ```Notifing``` your adapter.
+***BONUS*** Try to implement this feature without ```Notifying``` your adapter.
 
 Here is a preview of how the final result should look like:
 
@@ -65,7 +64,7 @@ Here is a preview of how the final result should look like:
 
 ### Task 5
 
-Make sure that your implementation is error free (your app doesn't crash with any input from api) and then make your pull-request as described in the submission section.
+Make sure that your implementation is error free (your app doesn't crash with any given input from the api) and then make your pull-request as described in the submission section.
 
 Thank you for your time and we will get back to you as soon as possible.
 
