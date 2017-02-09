@@ -26,7 +26,7 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 
 Some of the gists that we are fetching have anonymous owners, which in turn means we don't have the owner's image to load for the gist. 
 
-1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it supposed to with the new method of fetching the data.
+1. Switch to use `GithubApi.getGistsObservable()` as your api which will return you an `Observable` instead of `Call` object. Make sure the app behaves as it is supposed to with the new method of fetching the data.
 2. Filter out the gists with no owners/images
 3. Optimize the adapter in charge of populating the list
 
@@ -42,9 +42,9 @@ We have received a feature request that we would like you to implement. Our user
 
 1. Implement functionality for `change_image_visibility` item in the `main_menu.xml` menu so that when tapped, its title switches between `R.string.show_images` and `R.string.hide_images`
 2. Trigger the visibility of ImageView in each item in a way that all the image animations are triggered at the same time and not with any delay between items.
-3. Make sure your choice of show or hide images continues when user scrolls the list further down.
+3. Make sure your choice to show or hide images continues when user scrolls the list further down.
 
-***BONUS*** Try to implment this feature without ```Notifing``` your adapter.
+***BONUS*** Try to implement this feature without ```Notifying``` your adapter.
 
 Here is a preview of how the final result should look like:
 
