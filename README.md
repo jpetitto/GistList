@@ -9,6 +9,7 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * When finished each task, make a final commit for that task with commit message of `task #(task_number)` ex: task #3.
 * Once all work is completed, create a new pull-request from your branch to master.
 * If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR description.
+* Do not move, rename, or reformat the files
 
 ### We are looking for:
 * Clean, optimized, well-organized code.
@@ -41,7 +42,7 @@ We expect you to utilize all the benefits that we can get from this library in t
 We have received a feature request that we would like you to implement. Our users are asking for a menu button that hides all the images in the list so they can just see the plain gists in our list.
 
 1. Implement functionality for `change_image_visibility` item in the `main_menu.xml` menu so that when tapped, its title switches between `R.string.show_images` and `R.string.hide_images`
-2. Trigger the visibility of ImageView in each item in a way that all the image animations are triggered at the same time and not with any delay between items.
+2. Trigger the visibility of ImageView in each item with animations in a way that all the image animations are triggered at the same time and not with any delay between items.
 3. Make sure your choice to show or hide images continues when user scrolls the list further down.
 
 ***BONUS*** Try to implement this feature without ```Notifying``` your adapter.
