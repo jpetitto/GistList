@@ -8,7 +8,6 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * Create a local branch named with the following format: `firstName_lastName`.
 * When finished each task, make a final commit for that task with commit message of `task #(task_number)` ex: task #3.
 * If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR description.
-* Do not move, rename, or reformat the files but feel free to create new ones as you see appropiate.
 * Once all work is completed, create a new pull-request from your branch to master.
 * Our [bot](https://github.com/facebook/mention-bot) will tag the appropiate people to the PR and notify them.
 * You will hear back from us soon after.
@@ -23,6 +22,7 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks.
 * Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included.
 * Do not skip any task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
+* Do not move, rename, or reformat the files but feel free to create new ones as you see appropiate.
 
 # Tasks
 ### Task 1
