@@ -9,7 +9,7 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * When finished each task, make a final commit for that task with commit message of `task #(task_number)` ex: task #3.
 * If you'd like to include comments to explain your thought process, feel free to do so within the code or in your PR description.
 * Once all work is completed, create a new pull-request from your branch to master.
-* Our [bot](https://github.com/facebook/mention-bot) will tag the appropiate people to the PR and notify them.
+* Tag or add @kayvannj as a reviewer
 * You will hear back from us soon after.
 
 ### We are looking for:
