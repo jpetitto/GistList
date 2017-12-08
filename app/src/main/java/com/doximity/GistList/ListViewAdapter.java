@@ -41,7 +41,6 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     @Override public View getView(int position, View convertView, ViewGroup parent) {
-        // TODO: Task 1
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
         ImageView imageView = (ImageView) view.findViewById(R.id.item_image);
         TextView tvFileName = (TextView) view.findViewById(R.id.item_file_name);
