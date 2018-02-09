@@ -19,10 +19,18 @@ GistList is a useful app for Gist enthusiasts, it fetches and displays the top 1
 * Don't trust data or APIs, your implementation should handle any necessary data validation to prevent crashes.
 
 ### Limitations
-* We know you are eager to show us what you can do, but please don't do more than what is specifically requested in the tasks.
-* Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included.
-* Do not skip any task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
-* Do not move, rename, or reformat the files but feel free to create new ones as you see appropiate.
+This project uses specific tools and architecture, such as RxJava and data binding. We recognize that these may or may not match the tools that you are most comfortable working with. Because of this, you can complete this project in one of two ways:
+  1) Complete the tasks listed below using the provided tools to implement the project
+  2) Use your own tools and architectural knowledge to achieve the same end result
+
+  If you have chosen option 1:
+    * Please don't do more than what is specifically requested in the tasks.
+    * Do not integrate additional libraries, but feel free to utilize any functionality from the libraries already included.
+    * Do not skip any task even if you can jump ahead and implement the final result. We would like to see your progress from each task to the next.
+    * Do not move, rename, or reformat the files but feel free to create new ones as you see appropiate.
+
+  With option 2:
+    * You are free to implement the end result as you wish. Instead of making commits per task, you make commits as you see appropiate and we will build and take a look at your code. If you choose to, your pull request can delete everything and build it from ground up again.
 
 # Tasks
 ### Task 1
