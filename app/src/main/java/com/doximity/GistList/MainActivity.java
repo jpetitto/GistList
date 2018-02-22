@@ -1,12 +1,13 @@
 package com.doximity.GistList;
 
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.doximity.GistList.databinding.ActivityMainBinding;
 import com.doximity.GistList.models.Gist;
 
 import java.util.ArrayList;
@@ -30,10 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        final RecyclerView listView = (RecyclerView) findViewById(R.id.listview);
-        listView.setHasFixedSize(true);
+        final ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.github.com")
@@ -49,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(new Action1<List<Gist>>() {
                     @Override
                     public void call(List<Gist> gists) {
-                        listView.setAdapter(new ListViewAdapter(gists));
+                        binding.listview.setHasFixedSize(true);
+                        binding.listview.setAdapter(new ListViewAdapter(gists));
                     }
                 }, new Action1<Throwable>() {
                     @Override
