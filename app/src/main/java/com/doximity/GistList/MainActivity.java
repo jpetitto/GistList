@@ -1,47 +1,70 @@
 package com.doximity.GistList;
 
-import com.doximity.GistList.models.Gist;
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
+
+import com.doximity.GistList.models.Gist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import rx.Observable;
+import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = MainActivity.class.getSimpleName();
+
+    private Subscription subscription;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ListView listView = (ListView) findViewById(R.id.listview);
-        Retrofit retrofit =
-                new Retrofit.Builder().baseUrl("https://api.github.com").addConverterFactory(GsonConverterFactory.create()).build();
+        final RecyclerView listView = (RecyclerView) findViewById(R.id.listview);
+        listView.setHasFixedSize(true);
 
-        retrofit.create(GithubApi.class).getGists().enqueue(new Callback<ArrayList<Gist>>() {
-            @Override public void onResponse(Call<ArrayList<Gist>> call, Response<ArrayList<Gist>> response) {
-                if (response.isSuccessful()) {
-                    ArrayList<Gist> gists = response.body();
-                    listView.setAdapter(new ListViewAdapter(gists));
-                }
-            }
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.github.com")
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .build();
 
-            @Override public void onFailure(Call<ArrayList<Gist>> call, Throwable t) {
-            }
+        GistInteractor interactor = new GistInteractor(retrofit.create(GithubApi.class));
 
-        });
+        subscription = interactor.getGistsWithUserImage()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<List<Gist>>() {
+                    @Override
+                    public void call(List<Gist> gists) {
+                        listView.setAdapter(new ListViewAdapter(gists));
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+                        Log.e(TAG, "Request for Gists failed", throwable);
+                    }
+                });
+
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        subscription.unsubscribe();
+    }
 
     @Override public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
