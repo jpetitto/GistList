@@ -23,15 +23,24 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
+import rx.subjects.PublishSubject;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final String SHOW_IMAGE_KEY = "ShowImage";
 
     private Subscription subscription;
+
+    private PublishSubject<Boolean> showImageStream = PublishSubject.create();
+    private boolean showImage = true;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        if (savedInstanceState != null) {
+            showImage = savedInstanceState.getBoolean(SHOW_IMAGE_KEY);
+        }
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.github.com")
@@ -47,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(new Action1<List<Gist>>() {
                     @Override
                     public void call(List<Gist> gists) {
+                        float imageWidth = getResources().getDimension(R.dimen.image_size);
                         binding.listview.setHasFixedSize(true);
-                        binding.listview.setAdapter(new ListViewAdapter(gists));
+                        binding.listview.setAdapter(new ListViewAdapter(gists, showImageStream, showImage, imageWidth));
                     }
                 }, new Action1<Throwable>() {
                     @Override
@@ -60,16 +70,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(SHOW_IMAGE_KEY, showImage);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         subscription.unsubscribe();
     }
 
     @Override public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     @Override public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.change_image_visibility) {
+            // invert visibility, update UI, notify subscribers in adapter
+            showImage = !showImage;
+            item.setTitle(showImage ? R.string.hide_images : R.string.show_images);
+            showImageStream.onNext(showImage);
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
